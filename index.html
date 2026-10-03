@@ -1,38 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>QuickNotes</title>
-  </head>
-  <body>
-    <header>
-      <h1>QuickNotes</h1>
-      <p>Capture ideas before they disappear.</p>
-    </header>
- 
-    <main>
-      <section>
-        <h2>Add a note</h2>
-        <form id="note-form">
-          <label for="note-input">New note</label>
-          <input type="text" id="note-input" placeholder="Type a note..." />
-          <button type="submit">Add Note</button>
-        </form>
-      </section>
- 
-      <section>
-        <h2>Your notes</h2>
-        <p id="note-count">You have 2 notes.</p>
-        <ul id="notes-list">
-          <li>Revise HTML forms</li>
-          <li>Push my code to GitHub</li>
-        </ul>
-      </section>
-    </main>
- 
-    <footer>
-      <p>&copy; 2026 QuickNotes. Built during Web Foundations.</p>
-    </footer>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About - QuickNotes</title>
+</head>
+<body>
+
+  <header>
+    <h1>QuickNotes</h1>
+    <p>Your simple note-taking solution</p>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>About QuickNotes</h2>
+    <p>QuickNotes is a lightweight web application designed to help you capture ideas instantly. It keeps your daily tasks organized without any unnecessary hassle or distractions.</p>
+
+    <!-- How to use QuickNotes -->
+    <section>
+      <h3>How to use QuickNotes</h3>
+      <ol>
+        <li>Type your text into the quick input area.</li>
+        <li>Click the save button or press Enter to add the note.</li>
+        <li>Organize or delete your notes as you complete tasks.</li>
+      </ol>
+    </section>
+
+    <!-- Features -->
+    <section>
+      <h3>Features</h3>
+      <ul>
+        <li>Instant note creation and auto-saving</li>
+        <li>Clean, clutter-free user interface</li>
+        <li>Keyboard shortcuts for quick access</li>
+      </ul>
+    </section>
+
+    <!-- Keyboard 
+    <section>
+      <h3>Keyboard Shortcuts</h3>
+      <table>
+        <thead>
+          <tr>
+            <th scope="col">Shortcut</th>
+            <th scope="col">Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Ctrl + N</td>
+            <td>Create a new note</td>
+          </tr>
+          <tr>
+            <td>Ctrl + S</td>
+            <td>Save current note</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Feedback Form -->
+    <section>
+      <h3>Send Feedback</h3>
+      <form action="#" method="post">
+        <p>
+          <label for="user-name">Name:</label>
+          <input type="text" id="user-name" name="user-name" required>
+        </p>
+        <p>
+          <label for="user-email">Email:</label>
+          <input type="email" id="user-email" name="user-email" required>
+        </p>
+        <p>
+          <label for="user-message">Message:</label>
+          <textarea id="user-message" name="user-message" required></textarea>
+        </p>
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 QuickNotes. All rights reserved.</p>
+  </footer>
+
+</body>
 </html>
