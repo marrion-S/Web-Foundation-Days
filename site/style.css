@@ -1,7 +1,7 @@
-
-,
-before,
-after {
+/* Reset and base */
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -13,6 +13,7 @@ body {
   background-color: #f0f2f5;
 }
 
+/* Header */
 header {
   background-color: #2b4c7e;
   color: #ffffff;
@@ -31,6 +32,7 @@ header p {
   opacity: 0.9;
 }
 
+/* Navigation (Flexbox) */
 nav {
   display: flex;
   justify-content: center;
@@ -51,6 +53,7 @@ nav a:focus {
   color: #2b4c7e;
 }
 
+/* Main and section cards */
 main {
   max-width: 900px;
   margin: 24px auto;
@@ -74,6 +77,7 @@ section h2 {
   color: #2b4c7e;
 }
 
+/* Features (CSS Grid cards) */
 .features {
   list-style: none;
   margin: 0;
@@ -91,6 +95,7 @@ section h2 {
   text-align: center;
 }
 
+/* Shortcuts table */
 table {
   width: 100%;
   border-collapse: collapse;
@@ -112,6 +117,7 @@ tbody tr:nth-child(even) {
   background-color: #f5f7fa;
 }
 
+/* Forms: fields stacked vertically, full width */
 form label {
   display: block;
   font-weight: 600;
@@ -144,6 +150,7 @@ form textarea {
   resize: vertical;
 }
 
+/* Buttons with transition */
 button {
   background-color: #2b4c7e;
   color: #ffffff;
@@ -161,12 +168,14 @@ button:focus {
   transform: translateY(-2px);
 }
 
+/* Footer */
 footer {
   text-align: center;
   padding: 20px 16px;
   color: #52606d;
 }
 
+/* Small screens */
 @media (max-width: 600px) {
   header {
     padding: 16px 12px 12px;
